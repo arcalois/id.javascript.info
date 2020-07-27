@@ -3,17 +3,17 @@ Jawabannya: pertama dan ketiga akan diexekusi.
 Detil:
 
 ```js run
-// Runs.
-// The result of -1 || 0 = -1, truthy
+// Menjalankan.
+// Hasil dari -1 || 0 = -1, truthy
 if (-1 || 0) alert( 'first' );
 
-// Doesn't run
+// Tidak dijalankan
 // -1 && 0 = 0, falsy
 if (-1 && 0) alert( 'second' );
 
-// Executes
-// Operator && has a higher precedence than ||
-// so -1 && 1 executes first, giving us the chain:
+// Eksekusi
+// Operator && mempunyai prioritas yang lebih tinggi daripada ||
+// Jadi, -1 && 1 akan dieksekusi pertama, memberikan kita 'rantai':
 // null || -1 && 1  ->  null || 1  ->  1
 if (null || -1 && 1) alert( 'third' );
 ```
